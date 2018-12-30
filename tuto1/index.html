@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+	<title>Learn JS</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body{
+			margin-left: 35%;
+			margin-right: 20%;
+			width: 90%;
+			align-content: center;
+		}
+	</style>
+</head>
+<body>
+	<h2>What can JS do?</h2>
+
+	<p id="demo">JS can change HTML attributes values.</p>
+	<p>In this case JS changes the value of the src (source) attribute of an image.</p>
+
+	<button type="button" onclick="document.getElementById('myImage').src='light.jpg'">Turn on the light</button>
+
+	<img src="pic_bulboff.gif" id="myImage" style="width: 100px">
+
+	<button type="button" onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+	<h2>What can JS do again ?</h2>
+
+	<p id="omed">JS can change HTML element style.</p>
+
+	<button type="button" onclick="document.getElementById('omed').style.fontSize='35px'">Click me to display the new style</button>
+
+	<button type="button" onclick="document.getElementById('omed').style.fontSize='17px'">Click me to display the old style</button>
+
+	<h2>What can JS do again and again?</h2>
+	<p id="try">JS can also hide an HTML elements.</p>
+	<button type="button" onclick="document.getElementById('try').style.display='none'">Click me to hide the element which has id as 'try'</button>
+
+	<!--<h2>What JS can do again and again and again</h2>
+	<p id="yrt" style="display: none;">JS can show hidden HTML elements also.</p>-->
+	<button type="button" onclick="document.getElementById('try').style.display='block'">Click me to display your hidden element</button>
+	
+</body>
+</html>
